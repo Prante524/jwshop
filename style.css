@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f6deec;
     color: #333;
 }
 
 header {
-    background-color: #8b5e3b;
+    background-color: #bb61c5;
     color: white;
     padding: 15px;
     text-align: center;
@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #6b4226;
+    background-color: #265e6b;
 }
 
 nav ul li {
@@ -47,9 +47,16 @@ nav ul li a:hover {
 }
 
 .home img {
-    width: 40%;
+    width: 70%;
     border-radius: 10px;
 }
+
+.home-image img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+
 
 .cta-button {
     background-color: #d4af37;
@@ -61,8 +68,9 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #b7952d;
+    background-color: #1f8d7c;
 }
+
 
 /* Products Page */
 .product-grid {
@@ -129,7 +137,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #6b4226;
+    background-color: #1f4950;
     color: white;
     text-align: center;
     padding: 15px;
@@ -139,4 +147,18 @@ footer {
 .social-media img {
     width: 25px;
     margin: 0 10px;
+}
+
+/* extra feature */
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 item per row on mobile */
+    }
 }
